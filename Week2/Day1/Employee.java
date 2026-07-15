@@ -4,8 +4,8 @@ public class Employee {
     private int id;
     private String name;
     private double salary;
-    private Department department; // Composition: Employee HAS-A Department
-    private Address address;  // Composition: Employee HAS-A Address
+    private Department department;
+    private Address address;
 
     public Employee(int id, String name, double salary, Department department, Address address) {
         setId(id);
