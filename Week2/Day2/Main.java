@@ -76,18 +76,13 @@ class Triangle extends Shape {
 }
 public class Main {
     public static void main(String[] args) {
-        // Create an array of Shape references holding subclass objects
         Shape[] shapes = new Shape[3];
         shapes[0] = new Circle("Red", 5.0);
         shapes[1] = new Rectangle("Blue", 4.0, 6.0);
         shapes[2] = new Triangle("Green", 3.0, 4.0, 5.0);
-
-        // Iterate through the array and utilize polymorphism
         for (Shape shape : shapes) {
             System.out.println("Shape Type: " + shape.getClass().getSimpleName());
             System.out.println("Color: " + shape.getColor());
-
-            // Format to 2 decimal places for cleaner output
             System.out.printf("Area: %.2f\n", shape.getArea());
             System.out.printf("Perimeter: %.2f\n", shape.getPerimeter());
             System.out.println("-------------------------");
