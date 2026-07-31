@@ -1,4 +1,12 @@
 package Week4.Day3;
 
-public class MyThread {
+class MyThread extends Thread {
+
+    @Override
+    public void run() {
+
+        System.out.println("Child Thread Running");
+
+    }
+
 }

@@ -1,4 +1,5 @@
 package Week3.Day3;
-
-public interface Greeting {
+@FunctionalInterface
+interface Greeting {
+    void sayHello();
 }

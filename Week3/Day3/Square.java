@@ -1,4 +1,6 @@
 package Week3.Day3;
 
-public interface Square {
+@FunctionalInterface
+interface Square {
+    int square(int n);
 }

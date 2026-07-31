@@ -1,4 +1,16 @@
 package Week4.Day3;
 
-public class MyTask {
+class PrintNumbers implements Runnable {
+
+    @Override
+    public void run() {
+
+        for(int i = 1; i <= 5; i++) {
+
+            System.out.println(i);
+
+        }
+
+    }
+
 }
